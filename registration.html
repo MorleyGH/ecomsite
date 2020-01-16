@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
   <script type="text/javascript" defer src="js/navbar.js"></script>
   <script type="text/javascript" defer src="js/registration.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
   <div class="navbar" id="myNavbar">
@@ -44,7 +45,7 @@
       <form id="login" class="input-group">
         <input type="text" class="input-field" placeholder="Enter username" maxlength="16" required>
         <input type="password" class="input-field" placeholder="Enter password" minlength="6" required>
-        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <input type="checkbox" class="check-box"><p5>Remember Password</p5>
         <button type="submit" class="submit-btn">Log in</button>
       </form>
 
@@ -55,9 +56,13 @@
         <input type="password" id="password" class="input-field" placeholder="Enter password" minlength="6" maxlength="25" required>
         <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm password" minlength="6" maxlength="25" required>
         <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
-        <button type="submit" class="submit-btn">Register</button>
+        <div class="g-recaptcha" data-sitekey="6Leu988UAAAAAFkp8olxyQ6HW5xWttWq1qDPjrHH"></div>
+        <button type="submit" button id="submit" class="submit-btn">Register</button>
       </form>
 
+      <div class="status">
+
+      </div>
     </div>
 
   </div>

@@ -332,7 +332,7 @@ li i {
 
 .form-box {
 	width: 380px;
-	height: 480px;
+	height: 600px;
 	position: relative;
 	margin: 6% auto;
 	background: #fff;
@@ -406,7 +406,7 @@ li i {
 span {
 	color: #777;
 	font-size: 12px;
-	bottom: 68px;
+	bottom: 145px;
 	position: absolute;
 }
 
@@ -416,6 +416,12 @@ span {
 
 #register {
 	left: 550px;
+}
+
+.status {
+	font-size: 15px;
+	color: green;
+	padding: 15px;
 }
 
 @media screen and (max-width: 1085px) {
