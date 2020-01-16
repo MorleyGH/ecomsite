@@ -1,0 +1,477 @@
+/* body styles*/
+body {
+	background-color: #192231;
+	font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* all elements */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* logo properties */
+.logo {
+	width: 30%;
+    height: auto;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+/* change background colour of navbar */
+.navbar {
+    background-color: #131c29;
+	overflow: hidden;
+}
+
+/* stylize navbar hyperlinks */
+.navbar a {
+    color: #a3aeb9;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    float: left;
+    text-decoration: none;
+	
+}
+
+/* sets log in to right side */
+.navbar a:nth-child(4){
+	float: right;
+}
+
+/* make hovered page change colour */
+.navbar a:hover {
+    color: #cdd7e2;
+    background-color: #1c2636 ;
+}
+
+/* hide navbar icon */
+.navbar .icon {
+	display: none;
+}
+
+
+.slideshow {
+	overflow: hidden;
+	height: 500px;
+	width: 100vw;
+	position: relative;
+}
+
+.button button#right {
+	position: absolute;
+	top: 40%;
+	right: 15px;
+}
+
+.button button#left {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+}
+
+.button button {
+	outline: none;
+	border: 2.5px solid white;
+	padding: 12px 15px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.button button:hover {
+	background-color: white;
+	color: black;
+}
+
+.slide {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.5s ease-in-out;
+}
+
+/* makes the present slide visible */
+.slide.present{
+	opacity: 1;
+}
+
+/* slideshow images */
+.slide:first-child {
+	background: url('../assets/slideshow/keyboard.jpg') no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+	background: url('../assets/slideshow/steelseries_headset.jpg') no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+	background: url('../assets/slideshow/razer_mouse.jfif') no-repeat center center/cover;
+}
+.slide:nth-child(4) {
+	background: url('../assets/mouse.jpg') no-repeat center center/cover;
+}
+
+.slide .content{
+	opacity: 0;
+	bottom: 70px;
+	left: -600px;
+	width: 500px;
+	position: absolute;
+	color: #333;
+	background-color: rgba(255,255,255, 0.8);
+	padding: 30px;
+}
+
+/* style for slide header */
+.slide .content h1 {
+	margin-bottom: 10px;
+}
+
+/* style content for present slide - brings content on screen */
+.slide.present .content{
+	opacity: 1;
+	transform: translateX(600px);
+	transition: all 0.6s ease-in-out 0.3s;
+}
+
+.featured {
+	background-color: #24344d;
+	width: 90%;
+	height: 80px;
+	position: flex;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-right: 5%;
+	
+}
+
+.title {
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding-top: 10px;
+	font-weight: bold;
+}
+
+.container {
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+	margin: auto;
+	text-align: center;
+
+}
+
+.price {
+	color: white;
+	font-size: 25px;
+  }
+  
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
+  
+  .card button:hover {
+	opacity: 0.9;
+  }
+
+.box {
+	width: 20%;
+	height: auto;
+	background: white;
+	margin: 20px;
+	box-sizing: border-box;
+}
+
+.footer {
+	width: 100%;
+	background-color: #131c29;
+	display: block;
+}
+
+.inner-footer {
+	width: 95%;
+	margin: auto;
+	padding: 30px, 10px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+.footer-items {
+	width: 25%;
+	padding: 10px, 20px;
+	box-sizing: border-box;
+}
+
+/* footer title */
+h2 {
+	padding: 10px, 0;
+	font-size: 25px;
+	color: white;
+	text-transform: uppercase;
+}
+
+/* footer description */
+.footer-items p {
+	color: grey;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 25px;
+}
+
+h4 {
+	margin: 10px, 0;
+	color: grey;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.border {
+	height: 4px;
+	width: 40px;
+	background-color: #24344d;
+}
+
+ul {
+	list-style: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+
+ul a {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+ul a:hover {
+	color: #344c72;
+}
+
+ul li {
+	margin: 10px, 0;
+	height: 25px;
+}
+
+li i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 15px;
+	width: 15px;
+	margin: 20px, 5px;
+	padding: 10px;
+	color: #fff;
+	border-radius: 50%;
+	border: 1px, solid grey;
+	transition: 0.3s;
+}
+
+.social-media:hover {
+	background: grey;
+}
+
+.footer-bottom {
+	padding: 10px;
+	background: #131c29;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+}
+
+/* probs delete */
+.hero {
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../assets/slideshow/keyboard.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.form-box {
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box {
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #243aff1f;
+	border-radius: 30px;
+}
+
+.toggle-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #9CECFB, #65C7F7, #0052D4);
+	border-radius: 30px;
+	transition: 0.5s;
+}
+
+.input-group {
+	top: 180px;
+	position: absolute;
+	width: 280px;
+	transition: 0.5s;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #9CECFB, #65C7F7, #0052D4);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.check-box {
+	margin: 30px 10px 30px 0;
+}
+
+span {
+	color: #777;
+	font-size: 12px;
+	bottom: 68px;
+	position: absolute;
+}
+
+#login {
+	left: 50px;
+}
+
+#register {
+	left: 550px;
+}
+
+@media screen and (max-width: 1085px) {
+	.footer-items {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.box {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.box {
+		width: 90%;
+	}
+}
+
+@media(max-width: 550px) {
+	.slide .content {
+		bottom: -300px;
+		left: 0;
+		width: 100%;
+	}
+
+	.slide.present .content{
+		transform: translateY(-300px);
+	}
+
+}
+
+/* screen < 550px, hide all links except the first and show the menu icon to open other links */
+@media screen and (max-width : 550px ){
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon{
+		float: right;
+		display: block;
+	}
+
+	.footer {
+		display: none;
+	}
+}
+
+@media screen and (max-width : 550px ){
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}

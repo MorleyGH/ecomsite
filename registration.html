@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Void - Electronic Goods Store</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <script type="text/javascript" defer src="js/navbar.js"></script>
+  <script type="text/javascript" defer src="js/registration.js"></script>
+
+
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="#xml">XML</a>
+    <a href="#report">Report</a>
+    <a href="registration.html"><!--<i class="fa fa-fw fa-user"></i>-->Sign Up</a>
+<!--
+    <div class="logo">
+      <img src="assets/logo.png" class="img-fluid">
+    </div>
+  -->
+    <!-- Toggle menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i></a>
+
+  </div>
+
+</head>
+
+<body>
+
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+
+      <!-- forms -->
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter username" maxlength="16" required>
+        <input type="password" class="input-field" placeholder="Enter password" minlength="6" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+      </form>
+
+      <!-- username is max 16 character, muse be email formatted-->
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Enter username" maxlength="16" required>
+        <input type="email" class="input-field" placeholder="Enter email" pattern="[^ @]*@[^@]*" required>
+        <input type="password" id="password" class="input-field" placeholder="Enter password" minlength="6" maxlength="25" required>
+        <input type="password" id="confirmPassword" class="input-field" placeholder="Confirm password" minlength="6" maxlength="25" required>
+        <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+
+    </div>
+
+  </div>
+  
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="inner-footer">
+
+      <div class="footer-items">
+        <br>
+        <br>
+        <br>
+        <h2>Void Technologies</h2>
+        <p>The heart of gaming peripherals</p>
+      </div>
+
+      <div class="footer-items">
+        <br>
+        <h4>Quick Links</h4>
+        <div class="border"></div>
+        <ul>
+          <br>
+          <a href="index.html"><li>Home</li></a>
+          <a href="#"><li>Report</li></a>
+          <a href="#"><li>Registration</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-items">
+        <br>
+        <h4>Affiliates</h4>
+        <div class="border"></div>
+        <ul>
+          <br>
+          <a href="https://www.logitech.com/en-gb"><li>Logitech</li></a>
+          <a href="https://en-uk.sennheiser.com"><li>Sennheiser</li></a>
+          <a href="https://www.razer.com/gb-en"><li>Razer</li></a>
+        </ul>
+      </div>
+      
+      <div class="footer-items">
+        <br>
+        <h4>Contact Us</h4>
+        <div class="border"></div>
+          <ul>
+            <br>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>NTU Clifton Campus</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>01159418418</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>N0810870@my.ntu.ac.uk</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      Copyright &copy; Leon Morley 2020. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
