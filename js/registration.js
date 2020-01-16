@@ -1,4 +1,4 @@
-// Moves register/log in forms off screen
+// moves register/log in forms off screen
 var x = document.getElementById("login");
 var y = document.getElementById("register");
 var z = document.getElementById("btn");
@@ -15,7 +15,7 @@ function login () {
     z.style.left = "0px";
 }
 
-// Password form validation
+// password form validation
 
 var password = document.getElementById("password");
 var confirmPassword = document.getElementById("confirmPassword");
@@ -30,3 +30,14 @@ function passValidate() {
 
 password.onchange = passValidate;
 confirmPassword.onkeyup = passValidate;
+
+// google captcha - if captcha isn't triggered, don't allow form submit
+
+var form = document.getElementById('register');
+form.addEventListener("submit", function(event){
+    if (grecaptcha.getResponse() === '') {                            
+      event.preventDefault();
+      alert('Please check the recaptcha');
+    }
+  }
+, false);
