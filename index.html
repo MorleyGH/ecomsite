@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <script type="text/javascript" defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   <script type="text/javascript" defer src="js/navbar.js"></script>
   <script type="text/javascript" defer src="js/slideshow.js"></script>
+  <script type="text/javascript" defer src="js/swiper.js"></script>
+  <script type="text/javascript" defer src="js/xml_parser.js"></script>
 
   <div class="navbar" id="myNavbar">
     <a href="index.html" class="active">Home</a>
-    <a href="#xml">XML</a>
     <a href="#report">Report</a>
     <a href="registration.html"><!--<i class="fa fa-fw fa-user"></i>-->Sign Up</a>
 <!--
@@ -29,8 +32,9 @@
 
 </head>
 
-<body>
+<body onload = "loadXML()">
 
+  
   <div class="slideshow">
 
     <div class="slide present">
@@ -63,51 +67,171 @@
 
   </div>
 
-  <div class="featured">
-    <div class="title">
-      <h1>Featured Products</h1>
-    </div>
-  </div> 
-<!--
-  <!-- products 
-  <div class="container">
-    <div class="box">
-      <div class="card">
-        <img src ="assets/mouse.jpg" style="width: 100%">
-        <h3>Logitech Mouse</h3>
-        <p class="price">£130.03</p>
-        <p> the ultimate gaming mouse</p>
-        <p><button>Add to cart</button></p>
+  <!-- product slider 1 -->
+
+  <div class="heading">
+    <h3>Gaming Mice</h3>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p id="parse" class="desc">Logitech Mouse</p>
+          <a href="#" class="price">Price - $40</a>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="card">
-        <img src ="assets/keyboard.png" style="width: 100%">
-        <h3>Logitech Mouse</h3>
-        <p class="price">£130.03</p>
-        <p> the ultimate gaming mouse</p>
-        <p><button>Add to cart</button></p>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time"></p>
+          <div class="img-box">
+            <img src="assets/razermouse.jpg">
+          </div>
+      
+          <p class="desc">Razer DeathAdder V2
+          <a href="#" class="price">Price - £69.99</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="card">
-        <img src ="#" style="width: 100%">
-        <h3>Logitech Mouse</h3>
-        <p class="price">£130.03</p>
-        <p> the ultimate gaming mouse</p>
-        <p><button>Add to cart</button></p>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="box">
-      <div class="card">
-        <img src ="assets/#.jpg" style="width: 100%">
-        <h3>Logitech Mouse</h3>
-        <p class="price">£130.03</p>
-        <p> the ultimate gaming mouse</p>
-        <p><button>Add to cart</button></p>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+
       </div>
+
     </div>
-  </div> -->
+
+  </div>
+
+  
+  <!-- product slider 2 -->
+
+  <div class="heading">
+    <h3>Gaming esf</h3>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/mouse.jpg">
+          </div>
+      
+          <p class="desc">Logitech Mouse
+          <a href="#" class="price">Price - $40</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
 
   <!-- footer -->
   <div class="footer">
@@ -129,7 +253,7 @@
           <br>
           <a href="index.html"><li>Home</li></a>
           <a href="#"><li>Report</li></a>
-          <a href="#"><li>Registration</li></a>
+          <a href="registration.html"><li>Registration</li></a>
         </ul>
       </div>
 

@@ -16,6 +16,7 @@ function login () {
 }
 
 // password form validation
+// if both password variables don't match, don't allow user to continue
 
 var password = document.getElementById("password");
 var confirmPassword = document.getElementById("confirmPassword");
@@ -32,6 +33,8 @@ password.onchange = passValidate;
 confirmPassword.onkeyup = passValidate;
 
 // google captcha - if captcha isn't triggered, don't allow form submit
+// if the submit button is pressed and the captcha isn't completed,
+// don't allow the event for submit to occur
 
 var form = document.getElementById('register');
 form.addEventListener("submit", function(event){
