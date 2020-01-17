@@ -17,13 +17,13 @@
 
   <div class="navbar" id="myNavbar">
     <a href="index.html" class="active">Home</a>
-    <a href="#report">Report</a>
+    <a href="report.html">Report</a>
     <a href="registration.html"><!--<i class="fa fa-fw fa-user"></i>-->Sign Up</a>
-<!--
-    <div class="logo">
-      <img src="assets/logo.png" class="img-fluid">
-    </div>
-  -->
+
+ <div class="logo">
+      <img src="assets/logo.png">
+    </div> 
+
     <!-- Toggle menu icon -->
     <a href="javascript:void(0);" class="icon" onclick="navFunction()">
       <i class="fa fa-bars"></i></a>
@@ -32,9 +32,10 @@
 
 </head>
 
-<body onload = "loadXML()">
+<body>
 
-  
+<!-- slideshow layout -->
+<div class="slideshow-wrapper" style="overflow: hidden;">
   <div class="slideshow">
 
     <div class="slide present">
@@ -60,13 +61,13 @@
       
 
     <!-- Slideshow buttons -->
-    <div class="button">
+    <div class="button" id="skip">
       <button id="left"><i class="fas fa-arrow-left"></i></button>
       <button id="right"><i class="fas fa-arrow-right"></i></button>
     </div>
 
   </div>
-
+</div>
   <!-- product slider 1 -->
 
   <div class="heading">
@@ -74,68 +75,136 @@
   </div>
 
   <div class="swiper-container">
+    <div id="swiper-wrapper" class="swiper-wrapper">
+    </div>
+  </div>
+  
+  <!-- product slider 2 -->
+
+  <div class="heading">
+    <h3>Gaming Keyboards & Headsets</h3>
+  </div>
+
+  <div class="swiper-container">
     <div class="swiper-wrapper">
 
-      <!-- Slide 1 -->
+      <!-- product 1 -->
       <div class="swiper-slide">
         <div class="slider-box">
-          <p class="time">New</p>
+          <p class="time">SALE 50% OFF</p>
           <div class="img-box">
-            <img src="assets/mouse.jpg">
+            <img src="assets/product_images/logitech5.jpg">
           </div>
       
-          <p id="parse" class="desc">Logitech Mouse</p>
-          <a href="#" class="price">Price - $40</a>
+          <p class="desc">Logitech G Pro Wired Mechanical
+          <a href="#" class="price">Price - £67.00</a>
+          </p>
           <div class="cart">
             <a href="#">Add to cart</a>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 -->
+      <!-- product 2 -->
       <div class="swiper-slide">
         <div class="slider-box">
           <p class="time"></p>
           <div class="img-box">
-            <img src="assets/razermouse.jpg">
+            <img src="assets/product_images/razer3.png" style="width: 200px;">
           </div>
       
-          <p class="desc">Razer DeathAdder V2
+          <p class="desc">Razer Cynosa Chroma Membrane
+          <a href="#" class="price">Price - £41.00</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 3 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time"></p>
+          <div class="img-box">
+            <img src="assets/product_images/logitech6.jpg" style="width: 200px;">
+          </div>
+      
+          <p class="desc">Logitech Orion Spectrum G910
+          <a href="#" class="price">Price - £89.99</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- product 4 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">New</p>
+          <div class="img-box">
+            <img src="assets/product_images/razer4.jpg" style="width: 200px;">
+          </div>
+      
+          <p class="desc">Razer BlackWidow Elite
+          <a href="#" class="price">Price - £105.99</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- product 5 -->
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">Save £15</p>
+          <div class="img-box">
+            <img src="assets/product_images/hyperx1.jpg">
+          </div>
+      
+          <p class="desc">HyperX Cloud Stinger 
+          <a href="#" class="price">Price - £34.99</a>
+          </p>
+          <div class="cart">
+            <a href="#">Add to cart</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- product 6-->
+
+      <div class="swiper-slide">
+        <div class="slider-box">
+          <p class="time">Exclusive</p>
+          <div class="img-box">
+            <img src="assets/product_images/razer5.jpg">
+          </div>
+      
+          <p class="desc">Razer Kraken Tournament Edition
           <a href="#" class="price">Price - £69.99</a>
           </p>
           <div class="cart">
             <a href="#">Add to cart</a>
           </div>
         </div>
+
       </div>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <div class="slider-box">
-          <p class="time">New</p>
-          <div class="img-box">
-            <img src="assets/mouse.jpg">
-          </div>
-      
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
-          </p>
-          <div class="cart">
-            <a href="#">Add to cart</a>
-          </div>
-        </div>
-      </div>
+      <!-- product 7 -->
 
-      <!-- Slide 4 -->
       <div class="swiper-slide">
         <div class="slider-box">
-          <p class="time">New</p>
+          <p class="time">Recommended</p>
           <div class="img-box">
-            <img src="assets/mouse.jpg">
+            <img src="assets/product_images/steelseries2.jpg">
           </div>
       
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
+          <p class="desc">SteelSeries Arctis 7 Wireless
+          <a href="#" class="price">Price - £135.99</a>
           </p>
           <div class="cart">
             <a href="#">Add to cart</a>
@@ -144,81 +213,36 @@
 
       </div>
 
-    </div>
+      <!-- product 8-->
 
-  </div>
-
-  
-  <!-- product slider 2 -->
-
-  <div class="heading">
-    <h3>Gaming esf</h3>
-  </div>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-
-      <!-- Slide 1 -->
       <div class="swiper-slide">
         <div class="slider-box">
-          <p class="time">New</p>
+          <p class="time"></p>
           <div class="img-box">
-            <img src="assets/mouse.jpg">
+            <img src="assets/product_images/hyperx2.jpg">
           </div>
       
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
+          <p class="desc">HyperX Cloud II Pro
+          <a href="#" class="price">Price - £78.00</a>
           </p>
           <div class="cart">
             <a href="#">Add to cart</a>
           </div>
         </div>
+
       </div>
 
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <div class="slider-box">
-          <p class="time">New</p>
-          <div class="img-box">
-            <img src="assets/mouse.jpg">
-          </div>
-      
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
-          </p>
-          <div class="cart">
-            <a href="#">Add to cart</a>
-          </div>
-        </div>
-      </div>
+      <!-- product 9-->
 
-      <!-- Slide 3 -->
       <div class="swiper-slide">
         <div class="slider-box">
-          <p class="time">New</p>
+          <p class="time"></p>
           <div class="img-box">
-            <img src="assets/mouse.jpg">
+            <img src="assets/product_images/logitech7.jpg">
           </div>
       
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
-          </p>
-          <div class="cart">
-            <a href="#">Add to cart</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 4 -->
-      <div class="swiper-slide">
-        <div class="slider-box">
-          <p class="time">New</p>
-          <div class="img-box">
-            <img src="assets/mouse.jpg">
-          </div>
-      
-          <p class="desc">Logitech Mouse
-          <a href="#" class="price">Price - $40</a>
+          <p class="desc">Logitech G432 Wired
+          <a href="#" class="price">Price - £49.99</a>
           </p>
           <div class="cart">
             <a href="#">Add to cart</a>
@@ -242,7 +266,7 @@
         <br>
         <br>
         <h2>Void Technologies</h2>
-        <p>The heart of gaming peripherals</p>
+        <p>The home of gaming peripherals</p>
       </div>
 
       <div class="footer-items">
@@ -252,7 +276,7 @@
         <ul>
           <br>
           <a href="index.html"><li>Home</li></a>
-          <a href="#"><li>Report</li></a>
+          <a href="report.html"><li>Report</li></a>
           <a href="registration.html"><li>Registration</li></a>
         </ul>
       </div>

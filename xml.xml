@@ -5,6 +5,62 @@
 <electronics category="mouse">
     <title>Logitech Pro Wireless Gaming Mouse</title>
     <price>£129.99</price>
+    <image>assets/product_images/logitech1.jpg</image>
 </electronics>
+
+<electronics category="mouse">
+    <title>Razer DeathAdder V2</title>
+    <price>£69.99</price>
+    <image>assets/product_images/razer1.jpg</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>HARPOON RGB Gaming Mouse</title>
+    <price>£27.99</price>
+    <image>assets/product_images/corsair1.png</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>Logitech G203 Prodigy Gaming Mouse</title>
+    <price>£26.99</price>
+    <image>assets/product_images/logitech2.jpg</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>M65 PRO RGB FPS Gaming Mouse — Black</title>
+    <price>£27.99</price>
+    <image>assets/product_images/corsair2.png</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>Logitech G402 Hyperion Fury</title>
+    <price>£25.00</price>
+    <image>assets/product_images/logitech3.jpg</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>Razer Naga Trinity</title>
+    <price>£105.99</price>
+    <image>assets/product_images/razer2.png</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>Logitech G502 Lightspeed Wireless</title>
+    <price>£99.99</price>
+    <image>assets/product_images/logitech4.jpg</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>SteelSeries Rival 650 Wireless</title>
+    <price>£85.45</price>
+    <image>assets/product_images/steelseries1.jpg</image>
+</electronics>
+
+<electronics category="mouse">
+    <title>Alpha Gaming - Bandit</title>
+    <price>£14.25</price>
+    <image>assets/product_images/alpha1.jpg</image>
+</electronics>
+
 
 </electronicsstore>

@@ -20,10 +20,10 @@ const prevSlide = () => {
     if(present.previousElementSibling) {
         present.previousElementSibling.classList.add('present');
     } else {
-        slides[slide.length - 1].classList.add('present');
+        slides[slides.length - 1].classList.add('present');
     }
 
-    setTimeout(() => currrent.classList.remove('present'));
+    setTimeout(() => present.classList.remove('present'));
 }
 
 const nextSlide = () => {
@@ -36,12 +36,16 @@ const nextSlide = () => {
 
     // add present to the previous slide or to last slide
     if(present.nextElementSibling) {
-        present.nextElementSibling.classList.add('present');
+        if (present.nextElementSibling.id != "skip") {
+            present.nextElementSibling.classList.add('present');
+        } else {
+            slides[0].classList.add('present');
+        }
     } else {
         slides[0].classList.add('present');
     }
 
-    setTimeout(() => currrent.classList.remove('present'));
+    setTimeout(() => present.classList.remove('present'));
 }
 
 // events for buttons when clicked

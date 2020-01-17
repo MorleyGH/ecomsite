@@ -1,3 +1,4 @@
+// adds responsive class to navbar
 function navFunction() {
 	var x = document.getElementById("myNavbar");
 	if (x.className == "navbar") {

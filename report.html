@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Void - Electronic Goods Store</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <script type="text/javascript" defer src="js/navbar.js"></script>
+  <script type="text/javascript" defer src="js/registration.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+  <div class="navbar" id="myNavbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="#report">Report</a>
+    <a href="registration.html"><!--<i class="fa fa-fw fa-user"></i>-->Sign Up</a>
+
+    <div class="logo">
+      <img src="assets/logo.png">
+    </div>
+  
+    <!-- Toggle menu icon -->
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i></a>
+
+  </div>
+
+</head>
+
+<body>
+
+  <!-- Report formatting & contents -->
+
+  <div class="report-box">
+    <div class="heading">
+      <h7>Website Report</h7>
+    </div>
+    <br>
+    <br>
+    <h8>Introduction</h8>
+    <br>
+    <br>
+    <p5>This website didn't make many turns in regards to design, throughout its creation. 
+      I initially designed some wireframes, so I had a plan of how I wanted the website to look. 
+      I then implemented the core elements of the website into html files. 
+      Therefore, I could get a feel for the website in a real-world sense. 
+      This allowed me to trial several colour schemes by styling the elements.
+      I also made sure all elements of the website are responsive through the use of media queries.
+      Therefore, the website will be accessible on multiple devices such as mobile phones, which
+      is expected to have the largest traffic for the website.
+
+      
+    <br>
+    <br>
+    </p5>
+    <h8>Wireframes</h8>
+    <br>
+    <br>
+    <p5>
+      Below are the wireframes which I designed for the website. It includes the index page and registration page. I wanted to keep the website
+      fairly simple and intuitive to engage with all people. This means that the website 
+      isn't difficult to navigate through and any user should feel comfortable with it.
+      On the index page, I decided on having a large slideshow at the top of the landing page to instantly draw
+      attention from the user. I purposely utilised highly awarded hardware for the images,
+      as I know this will attract my target audience of gamers, even more. I then decided upon 
+      placing the list of products directly below to captitalize on the users existing attention.
+      <br>
+      <br>
+      With the registration page I still wanted to keep it simple. Therefore, I centered the form
+      on the page and didn't add much more, as I believe it is most effective on itself. I ensured I added 
+      Google Captcha to act as another form of user validation. This will avoid a lot of problems 
+      further down the line when the accounts will be registered to a database.
+    </p5>
+    <br>
+    <br>
+
+      <div class="wireframes">
+        <img src = "assets/wireframes/index wireframe.png" class="wireframe1">
+        
+        <img src = "assets/wireframes/registration wireframe.png" class="wireframe2">
+      </div>
+    <br>
+    <br>
+    <h8>Colour Schemes</h8>
+    <br>
+    <br>
+    <p5>Below is the colour scheme which I decided to use. I utilised this as I think the dark blue colours are
+      really easy on the eyes and the orange allows certain aspects to pop out to the user. This 
+      is why I used orange on the product cards. Initially, I was planning on using a basic white background.
+      However, I believe that using these darker colours, it makes the website look more unique
+      and it attracts users which are part of the 'dark mode' obsession with websites and apps. The background colour 
+      for the entire website is the darkest to ensure elements stand out on top of it. I have used
+      a white colour in some parts of the website to serve as basic text.
+    </p5>
+    <br>
+    <br>
+    <img src ="assets/colourscheme.png" class="colourscheme">
+ 
+
+  <br>
+  <br>
+  <h8>Slideshow</h8>
+  <br>
+  <br>
+  <p5>I spent a lot of time perfecting the slideshow. It contains three images with captions 
+    that change automatically every 4.5 seconds. The current slide can also be changed by pressing
+    the next and previous buttons. The JavaScript for the website took some time to program as 
+    I had to implement multiple functions such as: automatic transitions, transition timer resets etc. 
+    I believe this was extremely worth while though as the outcome to me looks amazing and is perfectly responsive
+    and robust for all resolutions.
+  </p5>
+  <br>
+  <br>
+  <img src ="assets/slidehow.png" class="colourscheme">
+  <br>
+  <br>
+  <h8>References</h8>
+  <br>
+  <br>
+  <p5><b>https://www.w3schools.com</b> - I utilised this website a fair bit throughout my development
+    of this website. This is because it teaches the basics of HTML, CSS, XML, XPATH and JavaScript,
+    all of which are required in the project.<br><br>
+    <b>https://fontawesome.com</b> - I used several icons from this website such as on my slideshow.
+    <br><br><b>https://fonts.google.com</b> - This is where I got my website font from.
+  </p5>
+</div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="inner-footer">
+
+      <div class="footer-items">
+        <br>
+        <br>
+        <br>
+        <h2>Void Technologies</h2>
+        <p>The home of gaming peripherals</p>
+      </div>
+
+      <div class="footer-items">
+        <br>
+        <h4>Quick Links</h4>
+        <div class="border"></div>
+        <ul>
+          <br>
+          <a href="index.html"><li>Home</li></a>
+          <a href="report.html"><li>Report</li></a>
+          <a href="registration.html"><li>Registration</li></a>
+        </ul>
+      </div>
+
+      <div class="footer-items">
+        <br>
+        <h4>Affiliates</h4>
+        <div class="border"></div>
+        <ul>
+          <br>
+          <a href="https://www.logitech.com/en-gb"><li>Logitech</li></a>
+          <a href="https://en-uk.sennheiser.com"><li>Sennheiser</li></a>
+          <a href="https://www.razer.com/gb-en"><li>Razer</li></a>
+        </ul>
+      </div>
+      
+      <div class="footer-items">
+        <br>
+        <h4>Contact Us</h4>
+        <div class="border"></div>
+          <ul>
+            <br>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>NTU Clifton Campus</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>01159418418</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>N0810870@my.ntu.ac.uk</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      Copyright &copy; Leon Morley 2020. All rights reserved.
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>
